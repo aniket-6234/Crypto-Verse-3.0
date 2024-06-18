@@ -42,7 +42,7 @@ const Dashboard = () => {
   const fetchGraphData = async () => {
     try {
       const response = await axios.get(
-        `https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10&api_key=${process.env.REACT_APP_GRAPH_API_KEY}`
+        `https://min-api.cryptocompare.com/data/exchange/histoday?tsym=USD&limit=10&api_key=${process.env.REACT_APP_GRAPH_KEY}`
       );
       const graphResp = response?.data?.Data;
       const array = [];
