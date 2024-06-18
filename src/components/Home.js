@@ -26,6 +26,9 @@ const Home = () => {
   };
 
   useEffect(() => {
+    const isSmallScreen = () => window.innerWidth < 768;
+    if (isSmallScreen()) return;
+
     const line1 = document.querySelector(".creative-developer");
     const line2 = document.querySelectorAll(".crypto-head");
     const line3 = document.querySelector(".last-para");
